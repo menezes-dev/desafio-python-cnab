@@ -1,8 +1,8 @@
 # desafio-python-cnab
 
-Aplicação desenvolvida em python utilziando Flask que permite o upload de um arquivo, e apartir desse upload, cria um banco de dados e mostra informações em tela para o usuário.
+Aplicação desenvolvida em python utilziando Flask que permite o upload de um arquivo, e apartir desse upload, cria um banco de dados e mostra informações em tela para o usuário:
 
-<img src='./static/img/print1.png' width='400px' height='400px'>   <img src='./static/img/print2.png' width='400px' height='400px'>
+<img src='./static/img/print1.png' width='400px' height='400px'>                 <img src='./static/img/print2.png' width='400px' height='400px'>
 
 ## Instalação
 
