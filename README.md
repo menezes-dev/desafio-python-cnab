@@ -8,7 +8,7 @@ Aplicação desenvolvida em python utilziando Flask que permite o upload de um a
 
 Primeiro, escolha um diretório local e inicie um repositório git como o seguinte comando: `git init`
 
-Após isso, faça o clone do repositório: `git clone git@github.com:menezes-dev/send-emails-python.git`
+Após isso, faça o clone do repositório: `git clone git@github.com:menezes-dev/desafio-python-cnab.git`
 
 Em seguida, no repositório atual, crie um ambiente virtual, para instalar as dependências da aplicação: `python -m venv venv`
 
