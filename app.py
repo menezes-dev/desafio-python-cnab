@@ -11,9 +11,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/file')
+@app.route('/file', methods=['POST'])
 def data():
-    file = request.files.get('file')
+    file = request.files.get('uploadedFile')
     name_file = file.filename
     file.save(os.path.join('./', name_file))
     open_file = open(name_file)
@@ -25,7 +25,7 @@ def data():
             (
                 normalizer.type(line[0:1]),
                 normalizer.date(line[1:9]),
-                normalizer.value(line[9:19]),
+                normalizer.value(line[9:19], line[0:1]),
                 line[19:30],
                 line[30:42],
                 normalizer.time(line[42:48]),
@@ -62,3 +62,7 @@ def data():
     connection.close()
 
     return render_template('tables.html', stores=stores_transactions, balances=stores_balances, amount=stores_amount)
+
+
+if __name__ == '__main__':
+    app.run(debug=True, port=8000)

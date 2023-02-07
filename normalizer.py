@@ -15,7 +15,7 @@ def type(value):
 
 
 def value(value, type):
-    real_value = float(value[0:10]/100.00)
+    real_value = float(value[0:10])/100.00
     options = ['2', '3', '9']
 
     if type in options:
