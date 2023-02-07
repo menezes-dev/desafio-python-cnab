@@ -2,7 +2,7 @@
 
 Aplicação desenvolvida em python utilziando Flask que permite o upload de um arquivo, e apartir desse upload, cria um banco de dados e mostra informações em tela para o usuário:
 
-<img src='./static/img/print1.png' width='500px' height='400px'>                 <img src='./static/img/print2.png' width='500px' height='400px'>
+<img src='./static/img/print1.png' width='500px' height='400px'>                 <img src='./static/img/print2.png' width='500px' height='400px' align='center'>
 
 ## Instalação
 
