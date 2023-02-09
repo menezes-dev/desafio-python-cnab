@@ -4,8 +4,6 @@ import normalizer
 import sqlite3
 
 app = Flask(__name__)
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -59,7 +57,10 @@ def data():
 
     stores_amount = len(stores)
 
+    cursor.execute('DROP TABLE cnab')
     connection.close()
+
+    os.remove(f'./{name_file}')
 
     return render_template('tables.html', stores=stores_transactions, balances=stores_balances, amount=stores_amount)
 
